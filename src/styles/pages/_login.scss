@@ -1,0 +1,127 @@
+@import "../globalSass/colors";
+@import "../globalSass/media";
+@import "../globalSass/fonts";
+
+body{
+  background-color: $background_color1 !important;
+  position: relative !important;
+}
+//.login{
+//  position: absolute;
+//  left: 50%;
+//  top: 50%;
+//  translate: -50%;
+//}
+.login-box-part1 {
+  background-color: $main_color;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-box-part2 {
+  background-color: $background_color2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login {
+  @include mdq(all-desktop) {
+    .login-box-part1 {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    .login-box-part2 {
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    //.login-box {
+    //  margin-top: 2%;
+    //  margin-left: 9%;
+    //}
+  }
+  @include mdq(all-mobile){
+    .login-box p{
+      font-size: 18px;
+    }
+    .login-box h1,.form-title{
+      font-size: 20px;
+    }
+  }
+}
+.login .login-box button {
+  border-radius: 25px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main_color;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#a8c4d3, 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+.forget-password {
+  margin-left: 28%;
+  color: $main_color;
+}
+.login-box h1 {
+  font-size: 1.483vw;
+  letter-spacing: 5px;
+  line-height: 40px;
+}
+.login-box p {
+  word-spacing: 4px;
+  font-size: 1.26vw;
+}
+.form-title {
+  color: $main_color;
+  letter-spacing: 4px;
+  font-size: 1.483vw;
+}
+.swal-button{
+  background-color: $background_color3;
+  transition: 0.5s;
+  color: $background_color2;
+}
+.swal-button:hover{
+  background-color: $background_color4;
+}
+.swal-icon--error__line{
+  background-color: $main-color2;
+  opacity: 0.7;
+}
+.swal-icon--error{
+  color: $main-color2;
+  opacity: 0.5;
+}
+.issue-message {
+  font-family: $font1;
+}
+.loading {
+  color: $main_color;
+  opacity: 0.7;
+}

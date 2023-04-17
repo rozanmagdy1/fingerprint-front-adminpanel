@@ -1,0 +1,123 @@
+body {
+  background-color: rgba(245, 245, 245, 0.44) !important;
+  position: relative !important;
+}
+
+.login-box-part1 {
+  background-color: #345b79;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-box-part2 {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (min-width: 1023px) {
+  .login .login-box-part1 {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .login .login-box-part2 {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login .login-box p {
+    font-size: 18px;
+  }
+  .login .login-box h1, .login .form-title {
+    font-size: 20px;
+  }
+}
+
+.login .login-box button {
+  border-radius: 25px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.login .login-box button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #345b79;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.login .login-box button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #75a2b9;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.login .login-box button:hover {
+  color: #fff;
+}
+.login .login-box button:hover:before {
+  width: 100%;
+}
+
+.forget-password {
+  margin-left: 28%;
+  color: #345b79;
+}
+
+.login-box h1 {
+  font-size: 1.483vw;
+  letter-spacing: 5px;
+  line-height: 40px;
+}
+
+.login-box p {
+  word-spacing: 4px;
+  font-size: 1.26vw;
+}
+
+.form-title {
+  color: #345b79;
+  letter-spacing: 4px;
+  font-size: 1.483vw;
+}
+
+.swal-button {
+  background-color: #597d99;
+  transition: 0.5s;
+  color: white;
+}
+
+.swal-button:hover {
+  background-color: #a8c4d3;
+}
+
+.swal-icon--error__line {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.swal-icon--error {
+  color: black;
+  opacity: 0.5;
+}
+
+.issue-message {
+  font-family: "Old Antic Decorative";
+}
+
+.loading {
+  color: #345b79;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=main.css.map */

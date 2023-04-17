@@ -1,0 +1,51 @@
+@mixin mdq($size) {
+  @if $size == xs {
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $size == md {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+      @content;
+    }
+  } @else if $size == lg-2 {
+    @media only screen and (min-width: 1280px) and (max-width: 1365px) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media only screen and (min-width: 1366px) and (max-width: 1439px) {
+      @content;
+    }
+  } @else if $size == xxl {
+    @media only screen and (min-width: 1440px) and (max-width: 1535px) {
+      @content;
+    }
+  } @else if $size == 3xl {
+    @media only screen and (min-width: 1536px) and (max-width: 1679px) {
+      @content;
+    }
+  } @else if $size == 4xl {
+    @media only screen and (min-width: 1680px) and (max-width: 1919px) {
+      @content;
+    }
+  } @else if $size == all-desktop {
+    @media only screen and (min-width: 1023px) {
+      @content;
+    }
+  } @else if $size == all-tablet {
+    @media only screen and (min-width: 700px) and (max-width: 1022px) {
+      @content;
+    }
+  } @else if $size == tablet-mobile {
+    @media only screen and (max-width: 1022px) {
+      @content;
+    }
+  } @else if $size == all-mobile {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+}
