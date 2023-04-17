@@ -27,7 +27,8 @@ body {
   .login .login-box p {
     font-size: 18px;
   }
-  .login .login-box h1, .login .form-title {
+  .login .login-box h1,
+  .login .form-title {
     font-size: 20px;
   }
 }
@@ -121,3 +122,6 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+.login-wrap {
+  height: 100vh;
+}

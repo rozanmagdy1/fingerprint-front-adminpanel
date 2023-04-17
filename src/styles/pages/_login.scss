@@ -2,7 +2,7 @@
 @import "../globalSass/media";
 @import "../globalSass/fonts";
 
-body{
+body {
   background-color: $background_color1 !important;
   position: relative !important;
 }
@@ -35,24 +35,25 @@ body{
     //  margin-left: 9%;
     //}
   }
-  @include mdq(all-mobile){
-    .login-box p{
+  @include mdq(all-mobile) {
+    .login-box p {
       font-size: 18px;
     }
-    .login-box h1,.form-title{
+    .login-box h1,
+    .form-title {
       font-size: 20px;
     }
   }
 }
 .login .login-box button {
   border-radius: 25px;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,14 +65,14 @@ body{
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
     height: 100%;
     background-color: darken(#a8c4d3, 15%);
-    transition: all .3s;
+    transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
   }
@@ -102,19 +103,19 @@ body{
   letter-spacing: 4px;
   font-size: 1.483vw;
 }
-.swal-button{
+.swal-button {
   background-color: $background_color3;
   transition: 0.5s;
   color: $background_color2;
 }
-.swal-button:hover{
+.swal-button:hover {
   background-color: $background_color4;
 }
-.swal-icon--error__line{
+.swal-icon--error__line {
   background-color: $main-color2;
   opacity: 0.7;
 }
-.swal-icon--error{
+.swal-icon--error {
   color: $main-color2;
   opacity: 0.5;
 }
