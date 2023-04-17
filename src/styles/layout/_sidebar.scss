@@ -1,0 +1,43 @@
+@import "../globalSass/colors";
+@import "../globalSass/fonts";
+@import "../globalSass/media";
+
+.sideBar{
+  background-color: $main-color;
+  @include mdq(all-mobile){
+
+  }
+}
+.sideBar .container{
+  font-family: $font3;
+  color: $main-color3;
+}
+.sideBar li{
+  background-color: transparent;
+  border: none;
+}
+.logo svg{
+  color: $main-color3;
+  opacity: 1;
+}
+.list-group svg,.list-group a, .sideBar-container a{
+  transition: 0.5s;
+}
+.list-group svg:not(.active):hover, .list-group a:not(.active):hover{
+  color: $main-color3;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.logout{
+  background-color: transparent;
+  border: none;
+}
+.logout:hover{
+  opacity: 0.5;
+}
+.active-link{
+  opacity: 0.5;
+}
+.active{
+  opacity: 0.5;
+}

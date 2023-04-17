@@ -1,0 +1,9 @@
+@import "../globalSass/colors";
+@import "../globalSass/fonts";
+
+.admin-panel-title{
+  background-color: $main-color;
+  font-family: $font2;
+  letter-spacing: 8px;
+  text-indent: 10%;
+}

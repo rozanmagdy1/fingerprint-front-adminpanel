@@ -1,0 +1,18 @@
+@import "../globalSass/colors";
+.overview-box{
+  background-color: $main-color3;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+  transition: 0.2s;
+  height: 30vh;
+}
+.home svg{
+  color:$main-color;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.home svg:hover{
+  color:$main-color;
+  opacity: 1;
+  cursor: pointer;
+}

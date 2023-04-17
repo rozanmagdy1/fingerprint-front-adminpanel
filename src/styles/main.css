@@ -5,12 +5,12 @@ body {
 
 .login-box-part1 {
   background-color: #345b79;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 .login-box-part2 {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 @media only screen and (min-width: 1023px) {
@@ -56,7 +56,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 100%;
   background-color: #75a2b9;
   transition: all 0.3s;
@@ -121,7 +121,113 @@ body {
   opacity: 0.7;
 }
 
-/*# sourceMappingURL=main.css.map */
 .login-wrap {
   height: 100vh;
 }
+
+.admin-panel-title {
+  background-color: #345b79;
+  font-family: "Arila", "Tahoma";
+  letter-spacing: 8px;
+  text-indent: 10%;
+}
+
+.footer {
+  background-color: #345b79;
+  letter-spacing: 5px;
+  height: 40px;
+  text-indent: 10%;
+}
+
+.sideBar {
+  background-color: #345b79;
+}
+.sideBar .container {
+  font-family: Andalus;
+  color: white;
+}
+
+.sideBar li {
+  background-color: transparent;
+  border: none;
+}
+
+.logo svg {
+  color: white;
+  opacity: 1;
+}
+
+.list-group svg, .list-group a, .sideBar-container a {
+  transition: 0.5s;
+}
+
+.list-group svg:not(.active):hover, .list-group a:not(.active):hover {
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.logout {
+  background-color: transparent;
+  border: none;
+}
+
+.logout:hover {
+  opacity: 0.5;
+}
+
+.active-link {
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+.home {
+  background-color: rgba(245, 245, 245, 0.44);
+}
+
+.home h2 {
+  color: #345b79;
+  font-family: Andalus;
+}
+
+.requests-today {
+  background-color: white;
+  height: 210px;
+  border-radius: 45px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+}
+
+.requests-today button {
+  outline: none;
+  background-color: #345b79;
+  transition: 1s;
+}
+
+.requests-today button:hover {
+  background-color: #a8c4d3;
+}
+
+.overview-box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+  transition: 0.2s;
+  height: 30vh;
+}
+
+.home svg {
+  color: #345b79;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.home svg:hover {
+  color: #345b79;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

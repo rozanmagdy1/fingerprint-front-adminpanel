@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import swal from "sweetalert";
-import "../../styles/main.css";
+import "../../styles/main.scss";
 
 function Login() {
   let [LoggedIssues, changeLoggedIssues] = useState(false);
